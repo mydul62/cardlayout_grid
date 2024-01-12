@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container{
+  max-width: 1340px;
+  width: 95%;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+}
+.products{
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+  gap: 15px;
+}
+.item1{
+  grid-column: 1/ span 2;
+  min-height: 145px;
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+}
+/* .item1 img{
+max-width: 100%;
+object-fit: cover;
+height: 550px;
+} */
+.item h1{
+  margin:8px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.item1,
+.item{
+  border-radius: 5px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  /* border: 1px solid #bbb; */
+  padding: 10px;
+}
+.btn_primary{
+  margin-top: 15px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #cc5a4d;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width:576px) {
+
+  .products{
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(4,1fr);
+  gap: 15px;
+}
+.item1{
+  grid-column: 1/ span 1;
+  min-height: 150px;
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+
+  .products{
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+  gap: 15px;
+}
+.item1{
+  grid-column: 1/ span 2;
+  min-height: 150px;
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+
+  .products{
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  gap: 15px;
+}
+.item1{
+  grid-column: 1/ span 3;
+  min-height: 150px;
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
