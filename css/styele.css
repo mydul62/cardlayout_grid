@@ -86,6 +86,7 @@ height: 550px;
   background-image: url('../images/1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
 }
 .item1 h1,.item1 p{
   color: #fff;
